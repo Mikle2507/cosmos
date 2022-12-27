@@ -1,0 +1,10 @@
+@import "../../styles/mixins";
+.earth {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 12rem 12rem 4rem;
+  @include bg-cover();
+  background-image: url("./images/earth_bg.jpg");
+}

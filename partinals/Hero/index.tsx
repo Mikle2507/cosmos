@@ -26,7 +26,7 @@ export const Hero: React.FC<IHeroProps> = ({}) => {
         </Button>
       </header>
 
-      {/* <Nav/> */}
+      <Nav/>
 
       <div className="hero__content">
         <div className={styles["hero__title"]}>
@@ -43,7 +43,7 @@ export const Hero: React.FC<IHeroProps> = ({}) => {
               </Button>
             </li>
             <li>
-              <Button view='secondary' onClick={()=>{
+              <Button onClick={()=>{
                 console.log('123');
               }}>
                 Connect Wallet
