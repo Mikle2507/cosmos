@@ -1,0 +1,14 @@
+@mixin font-face($font-family, $name, $weight, $style) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url('../../public/resources/fonts/#{$name}.woff2') format("woff2");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: $style;
+  }
+}
+
+@mixin font-family($font-family, $weight) {
+  font-family: "#{$font-family}", sans-serif;
+  font-weight: #{$weight};
+}
