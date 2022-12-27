@@ -1,0 +1,21 @@
+.title {
+  color: var(--color-light);
+  text-transform: uppercase;
+  letter-spacing: 3rem;
+
+  &--medium{
+    font-size: 6.6rem;
+  }
+  &--large{
+    font-size: 8rem;
+  }
+
+  &--center{
+    text-align: center;
+  }
+
+  &--right{
+    text-align: right;
+  }
+
+}

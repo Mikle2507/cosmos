@@ -1,0 +1,23 @@
+@import "../../styles/_mixins";
+
+.logotype {
+  display: inline-flex;
+  margin: -0.5rem 0 0 -0.5rem;
+  padding: 0.5rem;
+  border: 0.1rem solid transparent;
+
+  transition: opacity 0.3s ease-in-out;
+
+  &__img {
+    width: 16rem;
+    height: 2.3rem;
+  }
+
+
+}
+
+@include desktop-from{
+  .logotype:hover {
+    opacity: .8;
+  }
+};

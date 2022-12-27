@@ -1,0 +1,45 @@
+@import "../../styles/mixins";
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 120px 40px 40px;
+  @include bg-cover();
+  background-image: url("./images/home_bg.jpg");
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &__button-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+
+.header {
+  position: absolute;
+  left: 3rem;
+  top: 3rem;
+  right: 3rem;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 3rem;
+
+  &__logo {
+    position: relative;
+  }
+
+  z-index: 5;
+}
+
+
+
+

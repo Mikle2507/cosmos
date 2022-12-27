@@ -1,7 +1,15 @@
+:root{
+  --color-light: #fff;
+  --color-dark: #000;
+}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+html {
+  font-size: 62.5%;
+  line-height: 1;
 }
 
 html,
@@ -12,19 +20,37 @@ body {
 
 body {
   @include font-family("MazzardH", 400);
-  font-size: 15px;
-  line-height: 1;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  outline-offset: 0 !important;
+  border: 0.2rem solid transparent;
+  border-radius: 0.4rem;
+  outline: -webkit-focus-ring-color auto 0 !important;
+  transition: border-color 0.3s ease-in-out;
+
+  &:focus-visible {
+    border-color: #fff;
+  }
+}
+
+
+ul {
+  list-style: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @include font-family("MazzardH", 700);
-}
-input {
-  @include font-family("MazzardH", 400);
+  @include font-family("TTOctosquares", 400);
+  line-height: 1;
 }
 
+button {
+  border: 0;
+  padding: 0;
+  background: none;
+  outline-offset: 0 !important;
+  outline: -webkit-focus-ring-color auto 0 !important;
+  cursor: pointer;
+}

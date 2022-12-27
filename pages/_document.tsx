@@ -4,12 +4,12 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="preload" href="/fonts/MazzardH-Bold.woff2" as="font" type="font/wof2" crossOrigin=""/>
-        <link rel="preload" href="/fonts/NeueMachina-Bold.woff2" as="font" type="font/wof2" crossOrigin=""/>
-        <link rel="preload" href="/fonts/MazzardH-Regular.woff2" as="font" type="font/wof2" crossOrigin=""/>
-        <link rel="preload" href="/fonts/NeueMachina-Regular.woff2" as="font" type="font/wof2" crossOrigin=""/>
-        <link rel="preload" href="/fonts/MazzardH-Medium.woff2" as="font" type="font/wof2" crossOrigin=""/>
-        <link rel="preload" href="/fonts/NeueMachina-Medium.woff2" as="font" type="font/wof2" crossOrigin=""/>
+        <link rel="preload" href="./resources/fonts/MazzardH-Bold.woff2" as="font" type="font/wof2" crossOrigin=""/>
+        <link rel="preload" href="./resources/fonts/NeueMachina-Bold.woff2" as="font" type="font/wof2" crossOrigin=""/>
+        <link rel="preload" href="./resources/fonts/MazzardH-Regular.woff2" as="font" type="font/wof2" crossOrigin=""/>
+        <link rel="preload" href="./resources/fonts/NeueMachina-Regular.woff2" as="font" type="font/wof2" crossOrigin=""/>
+        <link rel="preload" href="./resources/fonts/MazzardH-Medium.woff2" as="font" type="font/wof2" crossOrigin=""/>
+        <link rel="preload" href="./resources/fonts/NeueMachina-Medium.woff2" as="font" type="font/wof2" crossOrigin=""/>
       </Head>
       <body>
         <Main />

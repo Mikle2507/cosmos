@@ -1,9 +1,11 @@
 import styles from "../styles/components/home.module.scss";
-import cl from 'classnames';
+import {Hero} from '../partinals/Hero';
 
 
 export default function Home() {
   return (
-    <section className={cl(styles.section, styles['section--main'])}></section>
+    <div className="page-container">
+      <Hero/>
+    </div>
   )
 }

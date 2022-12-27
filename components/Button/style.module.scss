@@ -1,0 +1,126 @@
+@import "../../styles/_mixins";
+
+$triangle-size: 0.5rem;
+$border-width: 0.2rem;
+$offset-triangle: 0.6rem;
+$offset-border-sides: 0.5rem;
+$padding-btn: 2.8rem;
+$border-color: var(--color-light);
+
+.btn {
+  position: relative;
+  @include font-family("NeueMachina", 700);
+  display: inline-flex;
+  padding-left: $padding-btn;
+  padding-right: $padding-btn;
+  font-size: 1.6rem;
+  color: var(--color-light);
+
+  transition: opacity 0.3s ease-in-out;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border: $triangle-size solid transparent;
+  }
+
+  &::before {
+    top: $offset-triangle;
+    left: $offset-triangle;
+    border-left: $triangle-size solid $border-color;
+    border-top: $triangle-size solid $border-color;
+  }
+
+  &::after {
+    right: $offset-triangle;
+    bottom: $offset-triangle;
+    border-right: $triangle-size solid $border-color;
+    border-bottom: $triangle-size solid $border-color;
+  }
+
+  &__inner {
+    display: block;
+    padding: 1.6rem 2rem;
+    border: $border-width solid var(--color-light);
+    border-left: 0;
+    border-right: 0;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: $padding-btn;
+      border: $border-width solid var(--color-light);
+    }
+
+    &::before{
+      left: 0;
+      top: 0;
+      bottom: $offset-border-sides;
+      border-bottom: 0;
+      border-right: 0;
+    }
+
+    &::after{
+      top: -$offset-border-sides;
+      right: 0;
+      bottom: 0;
+      border-top: 0;
+      border-left: 0;
+    }
+  }
+
+  &__lines {
+
+    &-top,
+    &-bottom {
+      position: absolute;
+      width: 2.45rem;
+      border: 0.2rem solid $border-color;
+      height: 0.7rem;
+    }
+
+    &-top {
+      top: -0.5rem;
+      right: 0.35rem;
+      border-right: 0;
+      border-bottom: 0;
+      border-left-width: 0.3rem;
+      transform: skew(-40deg);
+    }
+
+    &-bottom {
+      bottom: 0;
+      left: 0.32rem;
+      border-bottom: 0;
+      border-left: 0;
+      border-right-width: 0.3rem;
+      transform: skew(40deg);
+    }
+  }
+
+  &--secondary {
+
+
+  color: var(--color-dark);
+
+    &::before{
+      border-left: 0.5rem solid var(--color-dark);
+      border-top: 0.5rem solid var(--color-dark);
+    }
+
+    &::after {
+      right: $offset-triangle;
+      bottom: $offset-triangle;
+      border-right: $triangle-size solid var(--color-dark);
+      border-bottom: $triangle-size solid var(--color-dark);
+    }
+  }
+}
+
+@include desktop-from{
+  .btn:hover {
+    opacity: .7;
+  }
+};

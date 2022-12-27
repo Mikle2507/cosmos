@@ -1,8 +1,0 @@
-@import "../mixins/_block";
-.section {
-  min-height: 100vh;
-  &--main {
-    @include bg-std("../../public/resources/images/home_bg.jpg");
-    color: #000;
-  }
-}

@@ -1,6 +1,10 @@
-@mixin bg-std($bgImg) {
+@mixin bg-cover() {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(#{$bgImg});
+}
+
+@mixin bg-std() {
+  background-repeat: no-repeat;
+  background-position: center;
 }

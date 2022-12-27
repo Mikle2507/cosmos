@@ -1,0 +1,47 @@
+@import "../../styles/_mixins";
+
+.social-networks {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 3rem;
+
+  &__link {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    transition: opacity 0.3s ease-in-out;
+
+    @include bg-std();
+
+    background-size: 2rem;
+
+    &--discord {
+      background-image: url('./images/discord.svg');
+    }
+    &--twitter {
+      background-image: url('./images/twitter.svg');
+    }
+    &--ant {
+      background-image: url('./images/ant.svg');
+    }
+
+
+  }
+
+
+  &__svg {
+    width: 4rem;
+    height: 5rem;
+    border: 0.4rem solid #000;
+  }
+}
+
+@include desktop-from{
+  .social-networks {
+    &__link:hover {
+      opacity: .8;
+    }
+  }
+};
