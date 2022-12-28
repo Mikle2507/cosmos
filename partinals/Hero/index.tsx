@@ -11,7 +11,7 @@ interface IHeroProps {
 
 export const Hero: React.FC<IHeroProps> = ({}) => {
   return (
-    <section className={`${styles.hero}`}>
+    <section className={`section ${styles.hero}`}>
       <header
         className={styles.header}
       >

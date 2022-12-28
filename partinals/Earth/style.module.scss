@@ -4,6 +4,8 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 30px;
   padding: 12rem 12rem 4rem;
   @include bg-cover();
   background-image: url("./images/earth_bg.jpg");
